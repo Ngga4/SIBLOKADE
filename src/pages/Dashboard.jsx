@@ -261,7 +261,7 @@ function StatsSection() {
 
 function FeatureSection() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8 ">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-xl font-semibold text-slate-900 sm:text-3xl">
           Fitur Unggulan
@@ -300,7 +300,7 @@ function FeatureSection() {
 
 function CtaSection() {
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-4">
       <div className="rounded-3xl bg-gradient-to-br from-blue-600 to-blue-700 px-6 py-9 text-center text-white shadow-2xl shadow-blue-600/25 md:px-10 lg:flex lg:items-center lg:justify-between lg:text-left">
         <div>
           <h2 className="text-base font-semibold sm:text-2xl">
@@ -325,7 +325,7 @@ function CtaSection() {
 
 function AccessSection() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-5 py-5 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {accessCards.map((item) => {
           const Icon = item.icon;
@@ -378,7 +378,7 @@ function Footer() {
           Sistem Integrasi Blockchain dan Akuntabilitas Desa
         </p>
         <p className="mt-5 text-xs text-slate-500">
-          © 2025 SIBLOKADE. All rights reserved.
+          © 2026 SIBLOKADE. All rights reserved.
         </p>
       </div>
     </footer>
@@ -390,9 +390,9 @@ export default function Dashboard() {
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <Navbar />
       <HeroSection />
+      <CtaSection />
       <StatsSection />
       <FeatureSection />
-      <CtaSection />
       <AccessSection />
       <Footer />
     </main>
